@@ -5,23 +5,23 @@
 class Crofty < Formula
   desc "Own your website: a Markdown-to-published-site pipeline"
   homepage "https://crofty.site"
-  version "0.10.2"
+  version "0.11.0"
   license "AGPL-3.0-or-later"
 
   depends_on "hugo"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.10.2/crofty_0.10.2_darwin_amd64.tar.gz"
-      sha256 "9ed1042bcabdde37edd72d96babbc2ab18578546550d1fa715a29318543946cf"
+      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.11.0/crofty_0.11.0_darwin_amd64.tar.gz"
+      sha256 "442b3c6b758bb7566c01c25dc18614e962bafd54a8d22fda87735bf57e4ee430"
 
       define_method(:install) do
         bin.install "crofty"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.10.2/crofty_0.10.2_darwin_arm64.tar.gz"
-      sha256 "e21b6a974009e04619968557038c4e763ff418da41d01bd28eecd04bdaaeb72e"
+      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.11.0/crofty_0.11.0_darwin_arm64.tar.gz"
+      sha256 "a65cd0a3737cce8219b71cf1e2ae90f644d16c6492d57bd929d3509f78706a12"
 
       define_method(:install) do
         bin.install "crofty"
@@ -31,15 +31,15 @@ class Crofty < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.10.2/crofty_0.10.2_linux_amd64.tar.gz"
-      sha256 "bd0762a2a1abe94aaa13976e697d103d5bdde61888338661f522aaba7876dc82"
+      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.11.0/crofty_0.11.0_linux_amd64.tar.gz"
+      sha256 "231291ed3bf5234bc03880d5510601c02b518f7d8956c5ddb7667f4da256c2d3"
       define_method(:install) do
         bin.install "crofty"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.10.2/crofty_0.10.2_linux_arm64.tar.gz"
-      sha256 "261bf99627417e4974f0505c95de15eee746addd1bd8d2145be8a1cef34bfb8c"
+      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.11.0/crofty_0.11.0_linux_arm64.tar.gz"
+      sha256 "1c279be91f6bc47660658f2bbc43d25d62416699a23d4ac0216294f35f2042b4"
       define_method(:install) do
         bin.install "crofty"
       end
