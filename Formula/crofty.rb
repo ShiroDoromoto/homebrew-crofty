@@ -1,29 +1,29 @@
 class Crofty < Formula
   homepage "https://github.com/ShiroDoromoto/crofty"
-  version "0.17.0"
+  version "0.17.1"
   license "AGPL-3.0"
 
   depends_on "hugo"
 
   on_macos do
     on_arm do
-      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.17.0/crofty_0.17.0_darwin_arm64.tar.gz"
-      sha256 "fe9556e75bccf0ba6e6e7c80aa3fc549d18eb14ac07b10e48a81d0e1b799271a"
+      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.17.1/crofty_0.17.1_darwin_arm64.tar.gz"
+      sha256 "acc9efdc983c5fbd9271a78c7bc29e61ee5c43134f8f493637e57451ca0d59df"
     end
     on_intel do
-      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.17.0/crofty_0.17.0_darwin_amd64.tar.gz"
-      sha256 "a2af37747c0ba6bcebb689e9065fedbb856ef4c97085982ab35f585c6b38fa02"
+      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.17.1/crofty_0.17.1_darwin_amd64.tar.gz"
+      sha256 "b781a0ea6833cbd97ef8b7ce796105f3572973ac126946d8fe7dfd8b8845f486"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.17.0/crofty_0.17.0_linux_arm64.tar.gz"
-      sha256 "ab12eaa7cb2479a13305e68911860d4941b8d943734ada80577e6589b4d184e1"
+      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.17.1/crofty_0.17.1_linux_arm64.tar.gz"
+      sha256 "b7f05793bbc57d1262416a8f12f477a7df0945b17a79ef21c9bb7752dc8f2704"
     end
     on_intel do
-      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.17.0/crofty_0.17.0_linux_amd64.tar.gz"
-      sha256 "18d6d081532404419e5d9af437f15fbf0ba0d684a2751517442efbf87c009098"
+      url "https://github.com/ShiroDoromoto/crofty/releases/download/v0.17.1/crofty_0.17.1_linux_amd64.tar.gz"
+      sha256 "c36adb2a6d7fda602af121ecbf4ebd6c0e2987c50f656f113a1fb6a14708c1b9"
     end
   end
 
@@ -32,6 +32,6 @@ class Crofty < Formula
   end
 
   test do
-    assert_match "0.17.0", shell_output("#{bin}/crofty version")
+    assert_match "0.17.1", shell_output("#{bin}/crofty version")
   end
 end
