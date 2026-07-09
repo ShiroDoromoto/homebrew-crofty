@@ -1,7 +1,12 @@
 class Crofty < Formula
+  desc "Own your website: a Markdown-to-published-site pipeline"
   homepage "https://github.com/ShiroDoromoto/crofty"
   version "0.17.2"
   license "AGPL-3.0"
+
+  # v0.17.2 is the last release on this tap. Newer versions are elsewhere; the
+  # formula still installs so that `brew upgrade` does not error out on anyone.
+  deprecate! date: "2026-07-10", because: "crofty no longer ships to Homebrew; install from https://crofty.site"
 
   depends_on "hugo"
 
